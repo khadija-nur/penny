@@ -1,6 +1,1 @@
-Thanks for downloading this template!
-
-Template Name: Personal
-Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2f29adb0-d569-4799-9773-111e9de76fdb/deploy-status)](https://app.netlify.com/sites/penny/deploys)
