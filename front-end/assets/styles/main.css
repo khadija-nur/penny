@@ -1,0 +1,52 @@
+
+
+
+/*NavBarStyling*/
+#navbar {
+    outline-style: solid;
+    outline-color:#add8e6;
+    float: left;
+    
+}
+
+#search-button {
+    border-color: #ffc0cb;
+    font: 16px;
+    color: black;
+
+}
+
+#search-button:hover {
+    background-color: #ffc0cb;
+    border-color: #ffc0cb;
+}
+
+/*maincontent*/
+body {
+    background-color:#2b2b2b;
+}
+
+.jumbotron {
+    background-color:#add8e6;
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+
+
+
+
+
+
+
+
+
+
