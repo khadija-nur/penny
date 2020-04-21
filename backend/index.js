@@ -16,23 +16,23 @@ const server = http.createServer(app)
 const io = socketio(server)
 
 const port = process.env.PORT || 3000
-const publicDirectoryPath = path.join(__dirname, '../front-end')
+// const publicDirectoryPath = path.join(__dirname, '../front-end')
 
-app.use(express.static(publicDirectoryPath))
+// app.use(express.static(publicDirectoryPath))
 
 //MULTER IMAGE STORAGE
-const storage = multer.diskStorage({
-    destination: './front-end/uploads/',
-    filename: function(req, file, cb){
-        cb(null, file.fieldname + '-' + Date.now() + 
-        path.extname(file.originalname));
-        }
-});
+// const storage = multer.diskStorage({
+//     destination: './front-end/uploads/',
+//     filename: function(req, file, cb){
+//         cb(null, file.fieldname + '-' + Date.now() + 
+//         path.extname(file.originalname));
+//     }
+// });
 
 // Init UPLOAD PHOTO
-const upload = multer({
-    storage: storage
-}).single('image')
+// const upload = multer({
+//     storage: storage
+// }).single('image')
 
 app.get('/connect', (req, res) => {
     res.render('connect')
@@ -43,14 +43,15 @@ app.post('/upload', (req, res) => {
 
 // START CONNECTION
 io.on('connection', (socket) => {
-    var uploader = new siofu() // IMAGE UPLOAD
-    uploader.dir = path.join(__dirname, '../front-end/uploads')
-    uploader.listen(socket)
+    // var uploader = new siofu() // IMAGE UPLOAD
+    // uploader.dir = path.join(__dirname, '../front-end/uploads')
+    // uploader.listen(socket)
 
     console.log('New WebSocket connection')
  
     socket.on('join', (options, callback) => {
-        const {error, user} = addUser({ id: socket.id, ...options })
+        console.log(options);
+        const {error, user} = addUser({ id: socket.id, username: "Rob", room: "test" })
         if (error) {
             return callback(error)
         }
