@@ -1,3 +1,112 @@
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+}
+
+body {
+    background-image: url(./watercolor.png);
+    background-color: slategray;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+
+}
+
+/*Homepgbackground*/
+
+.homepgbackground {
+    background-image: url(./watercolor.png);
+    background-color: slategray;
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+  }
+
+  
+/*NavBarStyling*/
+.navbar {
+    outline-style: solid;
+    outline-color: slategray;
+   
+}
+
+#search-button {
+    border-color: #ffc0cb;
+    font: 16px;
+    color: black;
+
+}
+
+#search-button:hover {
+    background-color: #ffc0cb;
+    border-color: #ffc0cb;
+}
+
+.navbar-brand {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
+.navbar-nav {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+
+/*Aboutpennyonhomepg*/
+
+#learnmorebutton {
+    background-color: #ffc0cb!important;
+    border: none;
+
+}
+
+#learnmorebutton:hover  {
+    background-color: slategray!important;
+    
+}
+
+/*Quote*/
+#quote {
+    background-color: #ffc0cb!important;
+}
+
+/*Social Media*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background:#55ACEE;
+    color: white;
+  }
+
+
+
+
 /* Chat Page Layout */
 
 .chat {
