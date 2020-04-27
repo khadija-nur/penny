@@ -15,6 +15,10 @@ body {
 
 }
 
+h2 {
+    font-family: 'Amatic SC', cursive;
+}
+
 /*Homepgbackground*/
 
 .homepgbackground {
@@ -103,6 +107,56 @@ body {
     background:#55ACEE;
     color: white;
   }
+
+  #socialmedia {
+      padding-bottom: 20px;
+  }
+
+  .bg-dark {
+    background-color: lightgray!important;
+
+  }
+#footer {
+    background-color: lightgray!important;
+    width: 100%;
+    padding-top: 40px;
+    height: 20%;
+
+}
+
+
+/* About us */
+
+
+/* About us */
+.jumbotron {
+    background-image: url('aboutusbanner.png');
+    color:#fff;
+    padding: 100px;
+    font-family: Montserrat, sans-serif;
+    z-index: -1;
+}
+
+#aboutustagline {
+    color: black;
+    font-family: 'Amatic SC', cursive;
+    font-size: 65px;
+}
+
+
+
+
+/* Contact form */
+
+#contact {
+    background-color: lightgrey;
+    
+}
+
+#contact-button {
+    background-color:#ffc0cb ;
+}
+
 
 
 

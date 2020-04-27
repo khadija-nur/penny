@@ -16,6 +16,11 @@
     <!--Social Media icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--Bootstrap tooltip-->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     </head>
 
 </head>
@@ -46,5 +51,71 @@
       </form>
     </div>
   </nav>
+
+  <!-- Container (About Section) -->
+
+  <div class="jumbotron text-center">
+  <p id="aboutustagline">Penny for your thoughts</p> 
+</div>
+
+  <!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>The mission of Penny</h2><br>
+      <h4>Staying connected whilst staying apart</h4><br>
+      <p>Penny is a different type of chat app. Its one that wants to bridge the gap of staying connected through social isolation. 
+         Penny you to express yourself through images, colours and words. So even if you feel you have nothing to say, you can still let 
+        someone know you are thinking about them. We want people to feel together in spirit. Our name is based on the idiom 'A penny for your thoughts' a classic british saying 
+      of wanting to know what you are thinking during silence.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    We need your help!
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Spread the word about Penny</h5>
+    <p class="card-text">Follow us on social media, spread the word by sharing our website. This makes a huge difference as we are trying to connect as many people together as possible</p>
+    <div class="container" >
+      <!--Social Media -->
+      <div id="socialmedia">
+      <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fkid_directed_site%3D0%26u%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fdocs%252Fplugins%252F%26display%3Dpopup%26ref%3Dplugin%26src%3Dshare_button&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_GB&kid_directed_site=0" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/login" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&width=77&height=28&appId" width="77" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey" >
+  <h2>Contact us</h2>
+  <div class="row">
+    <div class="col-sm-6 slideanim">
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" id="contact-button" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   
