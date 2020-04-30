@@ -1,0 +1,337 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    overflow: hidden;
+}
+header {
+    overflow-x: hidden;
+}
+body {
+    background-image: url(../img/watercolor.png);
+    background-color: slategray;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    font-weight: 600;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+}
+
+/*Homepgbackground*/
+
+.homepgbackground {
+    background-image: url(../img//watercolor.png);
+    background-color: slategray;
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+  }
+
+  
+/*NavBarStyling*/
+.navbar {
+    outline-style: solid;
+    outline-color: slategray;
+   
+}
+
+#search-button {
+    border-color: #ffc0cb;
+    font: 16px;
+    color: black;
+
+}
+
+#search-button:hover {
+    background-color: #ffc0cb;
+    border-color: #ffc0cb;
+}
+
+.navbar-brand {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
+.navbar-nav {
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+}
+
+/*Aboutpennyonhomepg*/
+
+#learnmorebutton {
+    background-color: #ffc0cb!important;
+    border: none;
+
+}
+
+#learnmorebutton:hover  {
+    background-color: slategray!important;
+    
+}
+
+/*Quote*/
+#quote {
+    background-color: #ffc0cb!important;
+}
+
+/*Social Media*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      color: #ADD8E6;
+  }
+  
+  .fa-facebook {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background:#55ACEE;
+    color: white;
+  }
+
+  #socialmedia {
+      padding-bottom: 20px;
+  }
+
+  .bg-dark {
+    background-color: lightgray!important;
+
+  }
+#footer {
+    background-color: lightgray!important;
+    width: 100%;
+    padding-top: 40px;
+    height: 20%;
+
+}
+
+
+/* About us */
+
+
+/* About us */
+.jumbotron {
+    background-image: url('../img/aboutusbanner.png');
+    color:#fff;
+    padding: 100px;
+    font-family: Montserrat, sans-serif;
+    z-index: -1;
+}
+
+#aboutustagline {
+    color: black;
+    font-family: 'Amatic SC', cursive;
+    font-size: 65px;
+}
+
+
+
+
+/* Contact form */
+
+#contact {
+    background-color: lightgrey;
+    
+}
+
+#contact-button {
+    background-color:#ffc0cb ;
+}
+.centered-form input {
+    margin-bottom: 16px;
+    width: 100%;
+}
+/* Join Page Styles */
+.centered-form {
+    background: #ffc0cb!important;
+    width: 100vw;
+    height: 100vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-form__box {
+    padding: 24px;
+    width: 250px;
+}
+
+.centered-form button {
+    width: 100%;
+}
+
+.centered-form input {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+
+/* Chat Page Layout */
+
+.chat {
+    display: flex;
+    height: 90vh;
+}
+
+.chat__sidebar {
+    height: 90vh;
+    color: white;
+    background: #ffc0cb!important;
+    width: 225px;
+    overflow-y: scroll
+}
+
+/* Chat styles */
+
+.chat__main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.chat__messages {
+    flex-grow: 1;
+    padding: 24px 24px 0 24px;
+    overflow-y: scroll;
+}
+
+/* Message Styles */
+
+.message {
+    margin-bottom: 16px;   
+}
+
+.message__name {
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.message__meta {
+    color: #777;
+    font-size: 14px;
+}
+
+.message a {
+    color: #0070CC;
+}
+
+/* Message Composition Styles */
+
+.compose {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 16px;
+    padding: 24px;
+}
+
+.compose form {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 16px;
+}
+
+.compose input {
+    border: 1px solid #eeeeee;
+    width: 100%;
+    padding: 12px;
+    margin: 0 16px 0 0;
+    flex-grow: 1;
+}
+
+.compose button {
+    font-size: 14px;
+}
+
+.tooltip-canvas {
+    float: right;
+    padding: 10px;
+    color: black;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width: 120px;
+    height: 80px;
+    background:white;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.tooltip-canvas:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid whitesmoke;
+    border-bottom: 13px solid transparent;
+  }
+
+/* Chat Sidebar Styles */
+.room-title {
+    font-weight: 400;
+    font-size: 22px;
+    background: #2c2f3a;
+    padding: 24px;   
+}
+
+.list-title {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 4px;
+    padding: 12px 24px 0 24px;
+}
+
+.users {
+    list-style-type: none;
+    font-weight: 300;
+    padding: 12px 24px 0 24px;
+}
+
+/* Reminder Styles */
+.list-color {
+    background-color: #FFC0CB;
+}
+
+
+

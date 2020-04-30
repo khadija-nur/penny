@@ -1,0 +1,6 @@
+{
+    "MongoDB": {
+        "userconnectionString": "mongodb+srv://penny-web:qzYFQCpyGYWJg8nI@penny-db-xtot7.mongodb.net/test?retryWrites=true&w=majority",
+        "mLab": "mongodb://web-user:penny1@ds153501.mlab.com:53501/heroku_cjx6xx58"
+    }
+}

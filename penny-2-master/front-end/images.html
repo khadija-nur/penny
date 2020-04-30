@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>Penny</title>
+
+    <!--Social Media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="./index.html">Penny</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./connect.html">Connect</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./notification.html">Notifications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./reminders.html">Reminders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/gallery">Gallery</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <section id="history"> 
+        <article class="message-history">
+          <p id="message-sender"></p>
+          <p id="message-text" style="display:inline"></p>
+          <p id="break"></p>
+        </article>
+      </section>    
+      <!-- Footer -->
+      <footer class="py-4 bg-dark fixed-bottom">
+        <div class="container text-center"></i>
+            <!--Social Media -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="container">
+            <p class="m-0 text-center text-white">Penny&copy;</p>
+        </div>    
+        <!-- /.container -->
+      </footer>
+      <script>
+        const $messageSender  = document.querySelector('#message-sender')
+        const $messageText  = document.querySelector('#message-text')
+        const $break  = document.querySelector('#break')
+        const $history  = document.querySelector('#history')
+        fetch("/upload")
+        .then((response) => {
+          if(response.status !== 200) {
+          console.log("Something bad happened on the server");
+          return;
+          }
+          response.json().then((data) => {
+            console.log(data);
+            for(i=0; i<data.length; i++) {
+              $history.insertAdjacentHTML ('beforeend',
+                data[i]._id + " sent a ")
+              if (data[i].img != null) {
+                $history.insertAdjacentHTML ('beforeend',
+                `<img src="${data[i].img}" width=300vw>` )
+              }
+            }                
+          })
+        })
+        .catch((error) => {
+          console.log("Something went wrong: ", error);
+        });
+
+      </script>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.3/qs.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="/assets/js/chat.js"></script>
+    </body>
+</html>
+
