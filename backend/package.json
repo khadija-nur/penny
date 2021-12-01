@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@joeattardi/emoji-button": "^2.12.1",
+    "@joeattardi/emoji-button": "^4.6.2",
     "bad-words": "^3.0.3",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
